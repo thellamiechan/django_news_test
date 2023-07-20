@@ -5,17 +5,17 @@ from .forms import StoryForm
 
 
 class IndexView(generic.ListView):
-    template_name = 'news/index.html'
-    context_object_name = "all_stories"
-
-    def get_queryset(self):
-        '''Return all news stories.'''
-        return NewsStory.objects.all()
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['latest_stories'] = NewsStory.objects.all()[:4]
-        return context
+        template_name = 'news/index.html'
+        context_object_name = "all_stories"
+        
+        def get_queryset(self):
+            '''Return all news stories ordered by pub_date in descending order.'''
+            return NewsStory.objects.order_by('-pub_date')
+        
+        def get_context_data(self, **kwargs):
+            context = super().get_context_data(**kwargs)
+            context['latest_stories'] = NewsStory.objects.order_by('-pub_date')[:4]  # Fetch the 4 latest stories based on pub_date
+            return context
 
 class StoryView(generic.DetailView):
     model = NewsStory
@@ -31,3 +31,9 @@ class AddStoryView(generic.CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+    
+   
+
+    
+
+   

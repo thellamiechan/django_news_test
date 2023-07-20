@@ -1,16 +1,6 @@
-:root {
-    /* CSS HEX */
-    --kobicha: #643D27ff;
-    --feldgrau: #536956ff;
-    --bone: #E3D6C1ff;
-    --white: #FEFEFEff;
-    --olivine: #A8C199ff;
-}
-
 .story-card {
     margin: 2px;
-    border: 2px solid var(--kobicha);
-    background-color: var(--bone);
+    border: 1px solid #000;
     padding: 5px;
 }
 
@@ -28,7 +18,6 @@
     gap: 1px 1px;
     grid-template-areas: "left-1 right-1" "left-1 right-2" "left-1 right-3";
     max-height: 500px;
-    background-color: var(--white);
 }
 
 #story-card-1 {
@@ -60,14 +49,12 @@
 #story-card-3 .story-card-text h3,
 #story-card-4 .story-card-text h3 {
     font-size: 16px;
-    color: var(--kobicha);
 }
 
 #story-card-2 .story-card-text h4,
 #story-card-3 .story-card-text h4,
 #story-card-4 .story-card-text h4 {
     font-size: 12px;
-    color: var(--feldgrau);
 }
 
 #story-card-2 img,
@@ -91,10 +78,6 @@
 
 #story-content {
     text-align: justify;
-    font-size: medium;
-    margin: 16px;
-    padding: 16px
-    
 }
 
 #story-content img {
