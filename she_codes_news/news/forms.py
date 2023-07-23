@@ -15,4 +15,4 @@ class StoryForm(ModelForm):
                     'type':'date'
                 }
             ),
-        }    
+        } 
