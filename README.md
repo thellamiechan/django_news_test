@@ -45,3 +45,7 @@ This project is a news website developed by She Codes participants. The website 
   
 - [x] Gracefully handle the error where someone tries to create a new story when they are not logged in.
   ![Alt text](<she_codes_news/news/static/news/images/Screen Shot 2023-07-23 at 7.41.09 pm.png>)
+
+  ![Alt text](<she_codes_news/news/static/news/images/Screen Shot 2023-07-23 at 8.32.42 pm.png>)
+  ![Alt text](<she_codes_news/news/static/news/images/Screen Shot 2023-07-23 at 8.33.02 pm.png>)
+  ![Alt text](<she_codes_news/news/static/news/images/Screen Shot 2023-07-23 at 8.33.22 pm.png>)
